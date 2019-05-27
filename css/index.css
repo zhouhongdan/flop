@@ -1,0 +1,115 @@
+.flopPai{
+	height: 400px;width:900px;margin:auto;position: relative;left:0;top:0;z-index:0;overflow: hidden;
+}
+.project{
+    position: absolute;
+    left:50%;
+    margin-left:-60px;
+    bottom:0px;
+    /* background:pink; */
+    width:120px;
+    height: 195px;
+    z-index:0;
+    cursor: pointer;
+}
+.project.ani0 {
+    left: 40px;
+    bottom: 0px;
+    margin-left:0;
+}
+.project.ani1 {
+    left: 160px;
+    bottom: 0px;
+    margin-left:0;
+}
+.project.ani2 {
+    left: 280px;
+    bottom: 0px;
+    margin-left:0;
+}
+.project.ani3 {
+    left: 400px;
+    bottom: 0px;
+    margin-left:0;
+}
+.project.ani4 {
+    left: 520px;
+    bottom: 0px;
+    margin-left:0;
+}
+.project.ani5 {
+    left: 640px;
+    bottom: 0px;
+    margin-left:0;
+}
+.project .back, .project .front {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.project .front {
+    background: url(../images/font.png) no-repeat center center;
+}
+.project .back {
+    background: url(../images/card.png) no-repeat center center;
+}
+
+.project, .project .back, .project .front, .socials a, .transform_holder .back, .transform_holder .front, .transform_holder .transform {
+    -webkit-transition: all 1s cubic-bezier(0.68,-.55,.265,1.55);
+    -moz-transition: all 1s cubic-bezier(0.68,-.55,.265,1.55);
+    -o-transition: all 1s cubic-bezier(0.68,-.55,.265,1.55);
+    -ms-transition: all 1s cubic-bezier(0.68,-.55,.265,1.55);
+    transition: all 1s cubic-bezier(0.68,-.55,.265,1.55);
+}
+.project {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+    -ms-transform: perspective(1000px);
+    -moz-transform: perspective(1000px);
+    -ms-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+}
+.project .back, .project .front {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.project .front {
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+}
+ .project .back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+ .project.hover .front,.project:hover .front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+ .project.hover .back,.project:hover .back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+
+ }
+
+.btn{width:200px;height: 50px;line-height: 50px;text-align: center;color:#000;font-size:20px;color:#fff;background-color:red;}
